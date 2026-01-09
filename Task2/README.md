@@ -6,3 +6,25 @@ The features include total word count (words), number of hyperlinks (links), num
 The target variable is_spam indicates whether the email is spam (1) or legitimate (0).
 
 https //github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/train_eval.py
+
+Model used (with code) for logistic regression - 
+model = Pipeline([
+    ("scaler", StandardScaler()),
+    ("lr", LogisticRegression(max_iter=2000))
+])
+
+Provide the coefficients found - 
+=== Model coefficients ===
+Intercept: 1.9967161430216218
+Feature coefficients:
+capital_words: 3.599764145013232
+spam_word_count: 2.2316882394172026
+links: 2.1693102548113394
+words: 1.6923756456106873
+
+=== Evaluation on 30% holdout ===
+Confusion Matrix:
+[[364   9]
+ [ 20 357]]
+Accuracy: 0.961333
+

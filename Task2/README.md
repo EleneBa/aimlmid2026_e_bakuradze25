@@ -47,7 +47,16 @@ The confusion matrix summarizes the model’s classification performance by coun
 
 Accuracy = (357 + 364) / (357 + 364 + 9 + 20) = 0.961333
 
-4. I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
+
+**4.** https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/features.py
+https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/app.py
+
+The console program accepts a raw email text, then computes the same numeric features used in the dataset: total word count (words), number of hyperlinks (links), number of all-uppercase words (capital_words), and number of spam keywords (spam_word_count). These features are placed into a 1-row DataFrame with the same column order as training data and passed to the trained logistic regression model to obtain a class prediction and spam probability.
+to run it - cd task2_spam/src
+python app.py
+
+   
+5.  I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
 
 
 **the command and outcome **-

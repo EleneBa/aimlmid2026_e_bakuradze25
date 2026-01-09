@@ -17,10 +17,7 @@ File:
 ---
 
 ## Method
-Pearson’s correlation coefficient is defined as:
-
-r = cov(X, Y) / (σ_X · σ_Y)
-
+Pearson’s correlation coefficient
 The value was computed using Python (`scipy.stats.pearsonr`) after loading the data with pandas.
 
 ---

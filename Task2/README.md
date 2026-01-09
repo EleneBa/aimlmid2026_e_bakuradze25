@@ -1,5 +1,7 @@
 **1.** Upload the provided data file to your repository and provide a link to the uploaded file in your report. (1 point). - https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/Data/e_bakuradze25_23456_csv.csv
 
+---
+
 **2. **Dataset description:****
 The dataset contains numeric features extracted from email texts.
 The features include total word count (words), number of hyperlinks (links), number of capitalized words (capital_words), and count of known spam-related words (spam_word_count).
@@ -29,7 +31,10 @@ words: 1.6923756456106873
 Confusion Matrix:
 [[364   9]
  [ 20 357]]
- 
+
+---
+
+
 **3. Model Validation on Unused Data**
 Confusion Matrix and Accuracy
 The trained model was evaluated on the 30% holdout (unused) data.
@@ -47,6 +52,7 @@ The confusion matrix summarizes the model’s classification performance by coun
 
 Accuracy = (357 + 364) / (357 + 364 + 9 + 20) = 0.961333
 
+---
 
 **4.** https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/features.py
 https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/app.py
@@ -55,6 +61,7 @@ The console program accepts a raw email text, then computes the same numeric fea
 to run it - cd task2_spam/src
 python app.py
 
+---
 
 5. I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
 
@@ -72,6 +79,8 @@ FREE FREE FREE WIN PRIZE CLAIM MONEY
 Prediction: SPAM
 Spam probability: 1.0000
 
+---
+
 6. avoids spam-indicative terms, normal tone, no excessive punctuation, so features align with legitimate class.
 (.venv) C:\Users\EleneBakuradze\CDA01\aimlmid2026_e_bakuradze25\task2_spam\src>python app.py
 Model is trained. Paste an email text below. End with an empty line.
@@ -84,6 +93,8 @@ Thanks.
 
 Prediction: LEGITIMATE
 Spam probability: 0.0002
+
+---
 
 7. https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/plots.py
 visualizations - https://github.com/EleneBa/aimlmid2026_e_bakuradze25/tree/main/Task2/visualization

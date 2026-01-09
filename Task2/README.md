@@ -48,8 +48,10 @@ The confusion matrix summarizes the model’s classification performance by coun
 Accuracy = (357 + 364) / (357 + 364 + 9 + 20) = 0.961333
 
 4. I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
+
+
 **the command and outcome **-
-   (.venv) C:\Users\EleneBakuradze\CDA01\aimlmid2026_e_bakuradze25\task2_spam\src>python app.py
+(.venv) C:\Users\EleneBakuradze\CDA01\aimlmid2026_e_bakuradze25\task2_spam\src>python app.py
 Model is trained. Paste an email text below. End with an empty line.
 Subject: URGENT WINNER FREE PRIZE
 YOU ARE A WINNER WINNER WINNER
@@ -57,7 +59,6 @@ CLAIM YOUR FREE PRIZE MONEY NOW
 LIMITED OFFER BONUS CASH NOW
 CLICK http://free-prize-win.example.com
 FREE FREE FREE WIN PRIZE CLAIM MONEY
-
 
 Prediction: SPAM
 Spam probability: 1.0000

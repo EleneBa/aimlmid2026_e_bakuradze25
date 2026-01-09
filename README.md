@@ -1,7 +1,7 @@
 # aimlmid2026_e_bakuradze25
 # AIML Midterm – Finding the Correlation (e_bakuradze25)
 
-## Task
+## Task 1
 The goal is to find Pearson’s correlation coefficient for the blue points shown in the interactive plot at:
 
 https://max.ge/aiml_midterm/23456_html/e_bakuradze25_23456.html

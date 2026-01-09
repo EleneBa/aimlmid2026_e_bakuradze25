@@ -85,7 +85,10 @@ Thanks.
 Prediction: LEGITIMATE
 Spam probability: 0.0002
 
-7. 
+7. https://github.com/EleneBa/aimlmid2026_e_bakuradze25/blob/main/Task2/src/plots.py
+visualizations - https://github.com/EleneBa/aimlmid2026_e_bakuradze25/tree/main/Task2/visualization
+
+This confusion matrix heatmap visualizes the performance of the logistic regression model on the validation dataset. The diagonal cells represent correct classifications, while off-diagonal cells show misclassifications. The model correctly identifies most spam and legitimate emails, with relatively few false positives and false negatives, indicating strong classification performance.
 
 
 

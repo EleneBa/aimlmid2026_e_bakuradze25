@@ -55,8 +55,8 @@ The console program accepts a raw email text, then computes the same numeric fea
 to run it - cd task2_spam/src
 python app.py
 
-   
-5.  I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
+
+5. I generated a spam email by maximizing the feature values that the trained model associates with spam. Based on the learned coefficients, capital_words and spam_word_count are strong positive indicators, so I used many ALL-CAPS words (e.g., URGENT, WINNER, FREE, PRIZE) and repeated common spam keywords (free, winner, claim, prize, money, offer, urgent). I also included a URL to increase the links feature, and ensured the email contains enough text to raise the overall words count. These choices increase the weighted linear score of logistic regression, resulting in a SPAM prediction and a higher spam probability.
 
 
 **the command and outcome **-

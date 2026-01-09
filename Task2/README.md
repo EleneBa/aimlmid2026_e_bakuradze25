@@ -72,5 +72,20 @@ FREE FREE FREE WIN PRIZE CLAIM MONEY
 Prediction: SPAM
 Spam probability: 1.0000
 
+6. avoids spam-indicative terms, normal tone, no excessive punctuation, so features align with legitimate class.
+(.venv) C:\Users\EleneBakuradze\CDA01\aimlmid2026_e_bakuradze25\task2_spam\src>python app.py
+Model is trained. Paste an email text below. End with an empty line.
+Subject: Meeting notes and next steps
+Hi team,
+I uploaded the updated report and notes from today’s meeting.
+Please review section 2 and share feedback by Friday.
+Thanks.
+
+
+Prediction: LEGITIMATE
+Spam probability: 0.0002
+
+7. 
+
 
 
